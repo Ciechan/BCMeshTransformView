@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9819A5DA1920020400769705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9819A5D91920020400769705 /* Foundation.framework */; };
+		9819A5DC1920020400769705 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9819A5DB1920020400769705 /* CoreGraphics.framework */; };
+		9819A5DE1920020400769705 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9819A5DD1920020400769705 /* UIKit.framework */; };
+		9819A5E41920020400769705 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9819A5E21920020400769705 /* InfoPlist.strings */; };
+		9819A5E61920020400769705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A5E51920020400769705 /* main.m */; };
+		9819A5EA1920020400769705 /* BCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A5E91920020400769705 /* BCAppDelegate.m */; };
+		9819A6161920036500769705 /* BCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6151920036500769705 /* BCDemoViewController.m */; };
+		9819A62F1920058300769705 /* BCMeshContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A61D1920058300769705 /* BCMeshContentView.m */; };
+		9819A6301920058300769705 /* BCMeshShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 9819A61E1920058300769705 /* BCMeshShader.fsh */; };
+		9819A6311920058300769705 /* BCMeshShader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6201920058300769705 /* BCMeshShader.m */; };
+		9819A6321920058300769705 /* BCMeshShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 9819A6211920058300769705 /* BCMeshShader.vsh */; };
+		9819A6331920058300769705 /* BCMeshTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6231920058300769705 /* BCMeshTexture.m */; };
+		9819A6341920058300769705 /* BCMeshTransform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6251920058300769705 /* BCMeshTransform.mm */; };
+		9819A6351920058300769705 /* BCMeshTransform+Interpolation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6271920058300769705 /* BCMeshTransform+Interpolation.m */; };
+		9819A6361920058300769705 /* BCMeshTransformAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6291920058300769705 /* BCMeshTransformAnimation.m */; };
+		9819A6371920058300769705 /* BCMeshTransformView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A62B1920058300769705 /* BCMeshTransformView.m */; };
+		9819A6381920058300769705 /* BCMutableMeshTransform+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A62D1920058300769705 /* BCMutableMeshTransform+Convenience.m */; };
+		9819A63B192005FC00769705 /* BCZoomDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A63A192005FC00769705 /* BCZoomDemoViewController.m */; };
+		9819A63E1920061000769705 /* BCCurtainDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A63D1920061000769705 /* BCCurtainDemoViewController.m */; };
+		9819A6411920072800769705 /* BCDemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A6401920072800769705 /* BCDemoTableViewController.m */; };
+		9819A64619200BC400769705 /* picture@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9819A64519200BC400769705 /* picture@2x.jpg */; };
+		9819A64919200E6E00769705 /* BCMeshTransform+DemoTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A64819200E6E00769705 /* BCMeshTransform+DemoTransforms.m */; };
+		9819A66E192010DB00769705 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9819A66D192010DB00769705 /* Images.xcassets */; };
+		9819A67319211DCA00769705 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9819A67219211DCA00769705 /* OpenGLES.framework */; };
+		985F8D91192149320090D0D7 /* BCMeshBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9819A61B1920058300769705 /* BCMeshBuffer.m */; };
+		985F8D94192297340090D0D7 /* BCJellyDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 985F8D93192297340090D0D7 /* BCJellyDemoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9819A5D61920020400769705 /* BCMeshTransformViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCMeshTransformViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9819A5D91920020400769705 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9819A5DB1920020400769705 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9819A5DD1920020400769705 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9819A5E11920020400769705 /* BCMeshTransformViewDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BCMeshTransformViewDemo-Info.plist"; sourceTree = "<group>"; };
+		9819A5E31920020400769705 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9819A5E51920020400769705 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9819A5E71920020400769705 /* BCMeshTransformViewDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransformViewDemo-Prefix.pch"; sourceTree = "<group>"; };
+		9819A5E81920020400769705 /* BCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BCAppDelegate.h; sourceTree = "<group>"; };
+		9819A5E91920020400769705 /* BCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppDelegate.m; sourceTree = "<group>"; };
+		9819A5FE1920020400769705 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9819A6141920036500769705 /* BCDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDemoViewController.h; sourceTree = "<group>"; };
+		9819A6151920036500769705 /* BCDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCDemoViewController.m; sourceTree = "<group>"; };
+		9819A61A1920058300769705 /* BCMeshBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshBuffer.h; sourceTree = "<group>"; };
+		9819A61B1920058300769705 /* BCMeshBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshBuffer.m; sourceTree = "<group>"; };
+		9819A61C1920058300769705 /* BCMeshContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshContentView.h; sourceTree = "<group>"; };
+		9819A61D1920058300769705 /* BCMeshContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshContentView.m; sourceTree = "<group>"; };
+		9819A61E1920058300769705 /* BCMeshShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCMeshShader.fsh; sourceTree = "<group>"; };
+		9819A61F1920058300769705 /* BCMeshShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshShader.h; sourceTree = "<group>"; };
+		9819A6201920058300769705 /* BCMeshShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshShader.m; sourceTree = "<group>"; };
+		9819A6211920058300769705 /* BCMeshShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BCMeshShader.vsh; sourceTree = "<group>"; };
+		9819A6221920058300769705 /* BCMeshTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTexture.h; sourceTree = "<group>"; };
+		9819A6231920058300769705 /* BCMeshTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshTexture.m; sourceTree = "<group>"; };
+		9819A6241920058300769705 /* BCMeshTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTransform.h; sourceTree = "<group>"; };
+		9819A6251920058300769705 /* BCMeshTransform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BCMeshTransform.mm; sourceTree = "<group>"; };
+		9819A6261920058300769705 /* BCMeshTransform+Interpolation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransform+Interpolation.h"; sourceTree = "<group>"; };
+		9819A6271920058300769705 /* BCMeshTransform+Interpolation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMeshTransform+Interpolation.m"; sourceTree = "<group>"; };
+		9819A6281920058300769705 /* BCMeshTransformAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTransformAnimation.h; sourceTree = "<group>"; };
+		9819A6291920058300769705 /* BCMeshTransformAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshTransformAnimation.m; sourceTree = "<group>"; };
+		9819A62A1920058300769705 /* BCMeshTransformView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCMeshTransformView.h; sourceTree = "<group>"; };
+		9819A62B1920058300769705 /* BCMeshTransformView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCMeshTransformView.m; sourceTree = "<group>"; };
+		9819A62C1920058300769705 /* BCMutableMeshTransform+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMutableMeshTransform+Convenience.h"; sourceTree = "<group>"; };
+		9819A62D1920058300769705 /* BCMutableMeshTransform+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMutableMeshTransform+Convenience.m"; sourceTree = "<group>"; };
+		9819A639192005FC00769705 /* BCZoomDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCZoomDemoViewController.h; sourceTree = "<group>"; };
+		9819A63A192005FC00769705 /* BCZoomDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCZoomDemoViewController.m; sourceTree = "<group>"; };
+		9819A63C1920061000769705 /* BCCurtainDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCCurtainDemoViewController.h; sourceTree = "<group>"; };
+		9819A63D1920061000769705 /* BCCurtainDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCCurtainDemoViewController.m; sourceTree = "<group>"; };
+		9819A63F1920072800769705 /* BCDemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCDemoTableViewController.h; sourceTree = "<group>"; };
+		9819A6401920072800769705 /* BCDemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCDemoTableViewController.m; sourceTree = "<group>"; };
+		9819A64519200BC400769705 /* picture@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "picture@2x.jpg"; sourceTree = "<group>"; };
+		9819A64719200E6E00769705 /* BCMeshTransform+DemoTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BCMeshTransform+DemoTransforms.h"; sourceTree = "<group>"; };
+		9819A64819200E6E00769705 /* BCMeshTransform+DemoTransforms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BCMeshTransform+DemoTransforms.m"; sourceTree = "<group>"; };
+		9819A66D192010DB00769705 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9819A67219211DCA00769705 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		985F8D92192297340090D0D7 /* BCJellyDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCJellyDemoViewController.h; sourceTree = "<group>"; };
+		985F8D93192297340090D0D7 /* BCJellyDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCJellyDemoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9819A5D31920020400769705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9819A67319211DCA00769705 /* OpenGLES.framework in Frameworks */,
+				9819A5DC1920020400769705 /* CoreGraphics.framework in Frameworks */,
+				9819A5DE1920020400769705 /* UIKit.framework in Frameworks */,
+				9819A5DA1920020400769705 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9819A5CD1920020400769705 = {
+			isa = PBXGroup;
+			children = (
+				9819A5DF1920020400769705 /* BCMeshTransformViewDemo */,
+				9819A5D81920020400769705 /* Frameworks */,
+				9819A5D71920020400769705 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9819A5D71920020400769705 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9819A5D61920020400769705 /* BCMeshTransformViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9819A5D81920020400769705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9819A67219211DCA00769705 /* OpenGLES.framework */,
+				9819A5D91920020400769705 /* Foundation.framework */,
+				9819A5DB1920020400769705 /* CoreGraphics.framework */,
+				9819A5DD1920020400769705 /* UIKit.framework */,
+				9819A5FE1920020400769705 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9819A5DF1920020400769705 /* BCMeshTransformViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9819A6191920054300769705 /* BCMeshTransformView */,
+				9819A64A19200E7000769705 /* Demo View Controllers */,
+				9819A5E81920020400769705 /* BCAppDelegate.h */,
+				9819A5E91920020400769705 /* BCAppDelegate.m */,
+				9819A63F1920072800769705 /* BCDemoTableViewController.h */,
+				9819A6401920072800769705 /* BCDemoTableViewController.m */,
+				9819A64719200E6E00769705 /* BCMeshTransform+DemoTransforms.h */,
+				9819A64819200E6E00769705 /* BCMeshTransform+DemoTransforms.m */,
+				9819A64519200BC400769705 /* picture@2x.jpg */,
+				9819A66D192010DB00769705 /* Images.xcassets */,
+				9819A5E01920020400769705 /* Supporting Files */,
+			);
+			path = BCMeshTransformViewDemo;
+			sourceTree = "<group>";
+		};
+		9819A5E01920020400769705 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9819A5E11920020400769705 /* BCMeshTransformViewDemo-Info.plist */,
+				9819A5E21920020400769705 /* InfoPlist.strings */,
+				9819A5E51920020400769705 /* main.m */,
+				9819A5E71920020400769705 /* BCMeshTransformViewDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9819A6191920054300769705 /* BCMeshTransformView */ = {
+			isa = PBXGroup;
+			children = (
+				9819A61A1920058300769705 /* BCMeshBuffer.h */,
+				9819A61B1920058300769705 /* BCMeshBuffer.m */,
+				9819A61C1920058300769705 /* BCMeshContentView.h */,
+				9819A61D1920058300769705 /* BCMeshContentView.m */,
+				9819A61F1920058300769705 /* BCMeshShader.h */,
+				9819A6201920058300769705 /* BCMeshShader.m */,
+				9819A6211920058300769705 /* BCMeshShader.vsh */,
+				9819A61E1920058300769705 /* BCMeshShader.fsh */,
+				9819A6221920058300769705 /* BCMeshTexture.h */,
+				9819A6231920058300769705 /* BCMeshTexture.m */,
+				9819A6241920058300769705 /* BCMeshTransform.h */,
+				9819A6251920058300769705 /* BCMeshTransform.mm */,
+				9819A6261920058300769705 /* BCMeshTransform+Interpolation.h */,
+				9819A6271920058300769705 /* BCMeshTransform+Interpolation.m */,
+				9819A6291920058300769705 /* BCMeshTransformAnimation.m */,
+				9819A6281920058300769705 /* BCMeshTransformAnimation.h */,
+				9819A62A1920058300769705 /* BCMeshTransformView.h */,
+				9819A62B1920058300769705 /* BCMeshTransformView.m */,
+				9819A62C1920058300769705 /* BCMutableMeshTransform+Convenience.h */,
+				9819A62D1920058300769705 /* BCMutableMeshTransform+Convenience.m */,
+			);
+			name = BCMeshTransformView;
+			path = ../../BCMeshTransformView;
+			sourceTree = "<group>";
+		};
+		9819A64A19200E7000769705 /* Demo View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9819A6141920036500769705 /* BCDemoViewController.h */,
+				9819A6151920036500769705 /* BCDemoViewController.m */,
+				9819A63C1920061000769705 /* BCCurtainDemoViewController.h */,
+				9819A63D1920061000769705 /* BCCurtainDemoViewController.m */,
+				9819A639192005FC00769705 /* BCZoomDemoViewController.h */,
+				9819A63A192005FC00769705 /* BCZoomDemoViewController.m */,
+				985F8D92192297340090D0D7 /* BCJellyDemoViewController.h */,
+				985F8D93192297340090D0D7 /* BCJellyDemoViewController.m */,
+			);
+			name = "Demo View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9819A5D51920020400769705 /* BCMeshTransformViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9819A60E1920020400769705 /* Build configuration list for PBXNativeTarget "BCMeshTransformViewDemo" */;
+			buildPhases = (
+				9819A5D21920020400769705 /* Sources */,
+				9819A5D31920020400769705 /* Frameworks */,
+				9819A5D41920020400769705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BCMeshTransformViewDemo;
+			productName = BCMeshTransformViewDemo;
+			productReference = 9819A5D61920020400769705 /* BCMeshTransformViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9819A5CE1920020400769705 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bartosz Ciechanowski";
+			};
+			buildConfigurationList = 9819A5D11920020400769705 /* Build configuration list for PBXProject "BCMeshTransformViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9819A5CD1920020400769705;
+			productRefGroup = 9819A5D71920020400769705 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9819A5D51920020400769705 /* BCMeshTransformViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9819A5D41920020400769705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9819A6321920058300769705 /* BCMeshShader.vsh in Resources */,
+				9819A66E192010DB00769705 /* Images.xcassets in Resources */,
+				9819A64619200BC400769705 /* picture@2x.jpg in Resources */,
+				9819A6301920058300769705 /* BCMeshShader.fsh in Resources */,
+				9819A5E41920020400769705 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9819A5D21920020400769705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9819A6351920058300769705 /* BCMeshTransform+Interpolation.m in Sources */,
+				9819A6341920058300769705 /* BCMeshTransform.mm in Sources */,
+				9819A64919200E6E00769705 /* BCMeshTransform+DemoTransforms.m in Sources */,
+				9819A6371920058300769705 /* BCMeshTransformView.m in Sources */,
+				9819A6411920072800769705 /* BCDemoTableViewController.m in Sources */,
+				9819A6161920036500769705 /* BCDemoViewController.m in Sources */,
+				9819A6311920058300769705 /* BCMeshShader.m in Sources */,
+				9819A6361920058300769705 /* BCMeshTransformAnimation.m in Sources */,
+				9819A6331920058300769705 /* BCMeshTexture.m in Sources */,
+				985F8D94192297340090D0D7 /* BCJellyDemoViewController.m in Sources */,
+				9819A5E61920020400769705 /* main.m in Sources */,
+				985F8D91192149320090D0D7 /* BCMeshBuffer.m in Sources */,
+				9819A63E1920061000769705 /* BCCurtainDemoViewController.m in Sources */,
+				9819A63B192005FC00769705 /* BCZoomDemoViewController.m in Sources */,
+				9819A62F1920058300769705 /* BCMeshContentView.m in Sources */,
+				9819A5EA1920020400769705 /* BCAppDelegate.m in Sources */,
+				9819A6381920058300769705 /* BCMutableMeshTransform+Convenience.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9819A5E21920020400769705 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9819A5E31920020400769705 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9819A60C1920020400769705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9819A60D1920020400769705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9819A60F1920020400769705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BCMeshTransformViewDemo/BCMeshTransformViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BCMeshTransformViewDemo/BCMeshTransformViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9819A6101920020400769705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BCMeshTransformViewDemo/BCMeshTransformViewDemo-Prefix.pch";
+				INFOPLIST_FILE = "BCMeshTransformViewDemo/BCMeshTransformViewDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9819A5D11920020400769705 /* Build configuration list for PBXProject "BCMeshTransformViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9819A60C1920020400769705 /* Debug */,
+				9819A60D1920020400769705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9819A60E1920020400769705 /* Build configuration list for PBXNativeTarget "BCMeshTransformViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9819A60F1920020400769705 /* Debug */,
+				9819A6101920020400769705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9819A5CE1920020400769705 /* Project object */;
+}
