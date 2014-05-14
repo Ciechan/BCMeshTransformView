@@ -14,7 +14,13 @@ The demo app contains a few examples of how a mesh transform works and what it c
 
 ## Installation
 
-`BCMeshTransformView` is currently awaiting CocoaPods approval. Until then you can copy the contents of `BCMeshTransformView` folder to your project and include `BCMeshTransformView.h`, or use the embedded `.podspec` file.
+`BCMeshTransformView` is available via CocoaPods:
+
+```
+pod 'BCMeshTransformView'
+```
+
+Alternatively, you can copy the contents of `BCMeshTransformView` folder to your project and include `BCMeshTransformView.h`.
 
 ## Requirements
 
