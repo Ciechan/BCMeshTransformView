@@ -254,9 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9819A6321920058300769705 /* BCMeshShader.vsh in Resources */,
+				9819A6301920058300769705 /* BCMeshShader.fsh in Resources */,
 				9819A66E192010DB00769705 /* Images.xcassets in Resources */,
 				9819A64619200BC400769705 /* picture@2x.jpg in Resources */,
-				9819A6301920058300769705 /* BCMeshShader.fsh in Resources */,
 				9819A5E41920020400769705 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
