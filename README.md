@@ -26,7 +26,9 @@ Alternatively, you can copy the contents of `BCMeshTransformView` folder to your
 
 - iOS 7.0
 - ARC
-- OpenGL ES framework
+- GLKit framework
+
+You may optionally include OpenGL ES framework, as this will enable [frame capturing](https://developer.apple.com/library/ios/recipes/xcode_help-debugger/articles/debugging_opengl_es_frame.html).
 
 ## Using `BCMeshTransformView`
 	
