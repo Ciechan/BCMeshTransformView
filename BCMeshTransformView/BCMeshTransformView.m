@@ -6,6 +6,8 @@
 //
 
 #import <GLKit/GLKit.h>
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
 
 #import "BCMeshTransformView.h"
 #import "BCMeshContentView.h"

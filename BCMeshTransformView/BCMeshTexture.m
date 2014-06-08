@@ -7,6 +7,9 @@
 
 #import "BCMeshTexture.h"
 
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
+
 @implementation BCMeshTexture
 
 - (void)setupOpenGL

@@ -7,6 +7,9 @@
 
 #import "BCMeshShader.h"
 
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
+
 @implementation BCMeshShader
 
 - (BOOL)loadProgram

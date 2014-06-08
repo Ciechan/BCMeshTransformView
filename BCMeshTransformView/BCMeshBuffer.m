@@ -9,6 +9,9 @@
 #import "BCMeshShader.h"
 #import "BCMeshTransform.h"
 
+#import <OpenGLES/ES2/gl.h>
+#import <OpenGLES/ES2/glext.h>
+
 typedef struct BCVertex {
     GLKVector3 position;
     GLKVector3 normal;
