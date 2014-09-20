@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.authors      = { 'Bartosz Ciechanowski' => 'bartosz@ciechanowski.me' }
   spec.social_media_url = 'https://twitter.com/bciechanowski'
   spec.summary      = 'Mesh transforms for UIView'
-  spec.source       = { :git => 'https://github.com/Ciechan/BCMeshTransformView.git', :tag => '0.8.1' }
+  spec.source       = { :git => 'https://github.com/Ciechan/BCMeshTransformView.git', :tag => '0.9' }
   spec.resources    = 'BCMeshTransformView/**/*.{vsh,fsh}'
   spec.source_files = 'BCMeshTransformView/**/*.{h,m,mm}'
   spec.public_header_files = 'BCMeshTransformView/{BCMeshTransformView,BCMeshTransform,BCMutableMeshTransform+Convenience}.h'
