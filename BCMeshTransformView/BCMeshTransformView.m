@@ -83,10 +83,6 @@
     
     [super addSubview:_glkView];
     
-    _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkTick:)];
-    _displayLink.paused = YES;
-    [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
-
     _diffuseLightFactor = 1.0f;
     _lightDirection = BCPoint3DMake(0.0, 0.0, 1.0);
     
@@ -100,9 +96,15 @@
     _contentView = [[BCMeshContentView alloc] initWithFrame:self.bounds
                                                 changeBlock:^{
                                                     [welf setNeedsContentRendering];
+                                                } tickBlock:^(CADisplayLink *displayLink) {
+                                                    [welf displayLinkTick:displayLink];
                                                 }];
     
     [contentViewWrapperView addSubview:_contentView];
+    
+    _displayLink = [CADisplayLink displayLinkWithTarget:_contentView selector:@selector(displayLinkTick:)];
+    _displayLink.paused = YES;
+    [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     
     // a dummy view that's used for fetching the parameters
     // of a current animation block and getting animated

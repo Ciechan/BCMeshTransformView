@@ -71,10 +71,12 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
                   changeBlock:(void (^)(void))changeBlock
+                    tickBlock:(void (^)(CADisplayLink *))tickBlock
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.changeBlock = changeBlock;
+        self.tickBlock = tickBlock;
         self.observedLayers = [NSMutableSet set];
         
         [self registerAsObserverToLayer:self.layer];
@@ -89,7 +91,10 @@
     }
 }
 
-
+- (void)displayLinkTick:(CADisplayLink *)displayLink
+{
+    self.tickBlock(displayLink);
+}
 
 - (void)registerAsObserverToLayer:(CALayer *)layer
 {
