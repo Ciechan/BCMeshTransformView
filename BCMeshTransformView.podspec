@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'BCMeshTransformView'
-  spec.version      = '0.8.1'
+  spec.version      = '0.9'
   spec.license      =  { :type => 'MIT' }
   spec.homepage     = 'https://github.com/Ciechan/BCMeshTransformView'
   spec.authors      = { 'Bartosz Ciechanowski' => 'bartosz@ciechanowski.me' }
